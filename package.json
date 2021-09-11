@@ -27,16 +27,10 @@
     "node": "npx hardhat node --watch",
     "frontend": "cd frontend && npm run start"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/symfoni/hardhat-react-boilerplate.git"
-  },
-  "author": "Robertosnap",
+
+  "author": "Chiranjibi",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/symfoni/hardhat-react-boilerplate/issues"
-  },
-  "homepage": "https://github.com/symfoni/hardhat-react-boilerplate#readme",
+
   "dependencies": {
     "@types/fs-extra": "^9.0.12",
     "dotenv": "^10.0.0",
