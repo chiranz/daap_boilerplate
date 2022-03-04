@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./components/layout/Footer";
 import Navbar from "./components/layout/Navbar";
 import { joinClasses } from "./helpers";
@@ -42,22 +42,25 @@ function App() {
         <Navbar />
 
         <div className="h-full text-center">
-          <Switch>
-            <Route exact path="/">
-              <h1 className="mt-10 text-xl font-bold">
-                A Hardhat, React, Typescript, Tailwindcss boilerplate for DAAP
-                development.
-              </h1>
-              <GreeterProvider>
-                <Greeter />
-              </GreeterProvider>
-            </Route>
-          </Switch>
+          <Routes>
+            <Route path="/" element={HomePage} />
+          </Routes>
         </div>
         <Footer />
       </div>
     </Router>
   );
 }
+
+const HomePage = () => (
+  <>
+    <h1 className="mt-10 text-xl font-bold">
+      A Hardhat, React, Typescript, Tailwindcss boilerplate for DAAP development.
+    </h1>
+    <GreeterProvider>
+      <Greeter />
+    </GreeterProvider>
+  </>
+);
 
 export default App;

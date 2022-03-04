@@ -52,11 +52,15 @@ export class Greeter extends Contract {
   interface: GreeterInterface;
 
   functions: {
-    greet(overrides?: CallOverrides): Promise<{
+    greet(
+      overrides?: CallOverrides
+    ): Promise<{
       0: string;
     }>;
 
-    "greet()"(overrides?: CallOverrides): Promise<{
+    "greet()"(
+      overrides?: CallOverrides
+    ): Promise<{
       0: string;
     }>;
 
